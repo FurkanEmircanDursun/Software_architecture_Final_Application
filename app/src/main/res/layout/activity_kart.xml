@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape"
+
+
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:text="Bora Bank"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/kartNumarasiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="5444-4444-4444-4444"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/adSoyadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="FURKAN EMİRCAN DURSUN"
+            android:textColor="@color/white"
+            android:textSize="25dp">
+
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sonKullanmaTarihiText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="20dp"
+                android:text="10/28"
+                android:textColor="@color/white"
+
+                android:textSize="25dp">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/cvvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:text="337"
+                android:textColor="@color/white"
+                android:textSize="25dp">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kartTuruText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Visa"
+            android:textColor="@color/white"
+            android:textSize="40dp">
+
+
+        </TextView>
+        >
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/oankiKrediLimitText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Kart Limiti : 5000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/oankiEkPuanText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Ek Puan : 50"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/sayiText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="ParaHarca"
+        android:text="ParaHarca" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="PuanBorcOde"
+            android:text="Ek Puan ile borç öde" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ParaBorcOde"
+            android:text="Para ile borç öde" />
+    </LinearLayout>
+
+</LinearLayout>

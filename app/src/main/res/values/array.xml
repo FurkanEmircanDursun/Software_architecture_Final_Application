@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="kartlar">
+    <item>Visa</item>
+    <item>MasterCard</item>
+    <item>Amex</item>
+
+
+
+
+
+</string-array>
+
+
+
+
+
+
+
+
+
+
+</resources>
